@@ -1,0 +1,19 @@
+model News {
+  id          String      @id @default(uuid())
+  title       String   
+  author      String   
+  content     String
+  description String   @default("")
+  category    String  @default("main")
+  imageUrl    String?  
+  like        String[] 
+  dislike     String[] 
+  views       Int  @default(0) 
+  active      Boolean  @default(false)
+  tags        Tag[]    @relation("NewsTags") 
+  createdAt   DateTime @default(now()) 
+  updatedAt   DateTime @updatedAt 
+  publishedAt DateTime? 
+
+}
+

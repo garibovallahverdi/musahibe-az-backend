@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    /* Proje Ayarları */
+    "rootDir": "./src",                 /* Kaynak kodlarınızın bulunduğu klasörü belirtir. */
+    "outDir": "./dist",                 /* Derlenmiş dosyaların yazılacağı klasörü belirtir. */
+    "incremental": true, 
+
+    /* Dil ve Çevre Ayarları */
+    "target": "es2020",                /* Çıktı JavaScript'in hangi sürümde olacağını belirler. Node.js 14+ için uygundur. */
+    "lib": ["es2020"],                 /* Kullanılacak standart kütüphaneleri belirtir. */
+    "module": "commonjs",              /* Node.js'in kullandığı modül sistemi. */
+    "esModuleInterop": true,           /* CommonJS modülleriyle uyumluluk sağlar. */
+    "resolveJsonModule": true,         /* JSON dosyalarını import etmeye izin verir. */
+    "forceConsistentCasingInFileNames": true, /* Dosya isimlerinde tutarlılığı zorlar. */
+    "strict": true,                    /* Tüm sıkı tip denetim modlarını etkinleştirir. */
+
+    /* Modül Çözümleme */
+    "moduleResolution": "node",       /* Modül yollarını çözmek için Node.js kurallarını uygular. */
+    "baseUrl": "./src",                  /* Projede kök dizin. */
+
+    /* Çıktı Seçenekleri */
+    "declaration": true,              /* Derlenen dosyalar için .d.ts tür tanımlama dosyalarını oluşturur. */
+    "sourceMap": true,                /* Çıktı dosyaları için kaynak haritaları oluşturur. */
+
+    /* Tip Denetimi */
+    "skipLibCheck": true              /* Harici kütüphanelerdeki tip denetimlerini atlar, bu derlemeyi hızlandırır. */
+  },
+  "include": ["src"],                /* TypeScript tarafından dikkate alınacak dosyaları belirtir. */
+  "exclude": ["node_modules", "dist"] /* Harici bırakılacak dosya ve klasörler. */
+}
